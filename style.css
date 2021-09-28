@@ -1,0 +1,180 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{
+    scroll-behavior: smooth;
+    /*font-family: 'Roboto', sans-serif;
+    font-family: 'Akaya Kanadaka', cursive;*/
+}
+
+
+
+header{
+    width: 100%;
+    height: 100vh;
+}
+.nav1{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 2px 0px 3px rgb(238, 92, 194);
+    text-align: center;
+}
+.nav1 .left{
+    flex-basis: 50%;
+    letter-spacing: 2px;
+}
+.nav1 .left a{
+    text-decoration: none;
+    color: rgb(35, 199, 240);
+    font-weight: bold;
+    margin: 0px 5px;
+}
+
+.right i{
+    font-size: 20px;
+    margin: 0px 15px;
+    background-color: rgb(35, 199, 240);
+    color: white;
+    padding: 8px;
+    transition: 0.3s ease-out;
+}
+.nav1 .right i:hover{
+    transform: rotate(360deg);
+}
+
+.nav2{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.nav2 .nav2-left, .nav2 .nav2-center, .nav2 .nav2-right{
+    flex-basis: 30%;
+    margin: auto;
+    cursor: pointer;
+}
+.nav2-left i{
+    margin-left: 15px;
+}
+
+.nav2-center span{
+    color: rgb(35, 199, 240);   
+    font-style: normal;
+    font-size: xx-large;
+}
+
+.nav3{
+    width: 100%;
+    height: 70px;
+    line-height: 50px; 
+}
+.nav3 ul{
+     list-style: none;
+     text-align: center;
+}
+
+.nav3 ul li{
+    display: inline-block;
+    width: 200px;
+    position: relative;
+    z-index: 99;
+}
+
+.nav3 ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    display: block;
+}
+
+.nav3 ul li a:hover{
+    color: rgb(35, 199, 240);
+}
+
+.nav3 ul ul{
+     position:absolute;
+     top: 40px;
+     left: 0;
+     display: none;
+}
+
+.nav3 ul ul li{
+    border-bottom:1px solid rgb(238, 92, 194); ;
+    background-color: white;
+}
+
+.nav3 ul li:hover>ul{
+    display: block;
+       
+}
+
+.featured{
+    width: 100%;
+    height: 50vh;
+    background: url('image/one-piece.png');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    
+}
+
+.feature-texts{
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-family: 'Akaya Kanadaka', cursive;
+    left: 05%;
+}
+img {
+    border-radius: 30%;
+}
+#footer {
+    text-align: center;
+    padding: 50px;
+}
+
+.popular{
+    padding: 40px 10px;
+    background-color: rgba(0,0,0,0.01);
+}
+.info{
+    text-align: center;
+}
+
+.popular h1{
+    color: rgb(35, 199, 240);
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.popular .info p{
+    color: rgb(151, 145, 137);
+    margin: 10px 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
